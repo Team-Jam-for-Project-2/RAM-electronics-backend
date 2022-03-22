@@ -1,6 +1,6 @@
 const mongoose = require('./connection');
 const seedData = require('./seeds.json');
-const Items = require('./models/items');
+const Item = require('./models/items');
 
 
 Items.deleteMany({})

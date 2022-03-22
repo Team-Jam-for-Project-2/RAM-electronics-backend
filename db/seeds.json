@@ -1,0 +1,17 @@
+[
+{
+    "name": "RAM Smart Watch",
+    "image":
+"https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
+    "description": "A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides for management and telemetry (such as long-term biomonitoring). While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, 2010s smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with FM radio and playback of digital audio and video files via a Bluetooth headset. Some models, called watch phones (or vice versa), have mobile cellular functionality like making calls.",
+    "price": "$299",
+    "_id": 1
+  },
+ {
+    "name": "TV",
+    "image": "https://cdn.pixabay.com/photo/2020/12/16/21/58/tv-5837826_960_720.jpg",
+    "description": "Television is a telecommunication medium used for transmitting moving images in black-and-white or in color, and in two or three dimensions and sound. The term can refer to a television set, a television show, or the medium of television transmission. Television is a mass medium for advertising, entertainment, news, and sports.",
+    "price": "$999",
+    "_id": 2
+  }
+]
