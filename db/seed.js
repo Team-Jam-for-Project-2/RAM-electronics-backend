@@ -12,3 +12,18 @@ Item.deleteMany({})
         });
     })
     .catch((err => console.error(err)));
+//above from JS, below from MK
+
+
+// Item.deleteMany({})
+//   .then(() => {
+//     Item.insertMany(seedData)
+//       .then((item) => {
+//         console.log("items!!!", item);
+//       })
+//       .catch(console.error)
+//       .finally(() => {
+//         process.exit();
+//       });
+//   })
+//   .catch((err) => console.error(err));
