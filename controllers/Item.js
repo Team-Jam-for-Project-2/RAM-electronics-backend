@@ -1,16 +1,28 @@
 const express = require('express');
 const Item = require('../db/models/items');
-const router = express.router;
+const router = express.Router();
 
 
 //Index: get all items
 //sorry if we don't need this route
 //http://localhost:4000/api/items/
-router.get('/', (req, res) => {
-    Item.find({}).then((data) => {
-        res.json(data);
-    });
-});
+router.get('/', async (req, res) => {
+    try {
+      await Item.find().then((itemsToShow) => {
+        res.json(itemsToShow);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  });
+
+
+//below is promise chaining which might not have worked
+// router.get('/', (req, res) => {
+//     Item.find({}).then((data) => {
+//         res.json(data);
+//     });
+// });
 
 
 //Show: Get one item by id
@@ -36,3 +48,5 @@ router.get('/:id', async (req, res) => {
 //     .catch(console.error)
 // })
 //
+
+module.exports = router;
