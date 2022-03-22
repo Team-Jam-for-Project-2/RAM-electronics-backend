@@ -1,11 +1,12 @@
 
 [
     {
-    "name": "RAM Smart Watch",
+    "name": "Smart Watch",
     "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
     "description": "A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides for management and telemetry (such as long-term biomonitoring). While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, 2010s smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with FM radio and playback of digital audio and video files via a Bluetooth headset. Some models, called watch phones (or vice versa), have mobile cellular functionality like making calls.",
     "price": "$299",
-"_id": 1
+"_id": 1,
+"category": "smart"
 },
 
 {
@@ -13,7 +14,8 @@
     "image": "https://cdn.pixabay.com/photo/2020/12/16/21/58/tv-5837826_960_720.jpg",
     "description": "Television  is a telecommunication medium used for transmitting moving images in black-and-white or in color, and in two or three dimensions and sound. The term can refer to a television set, a television show, or the medium of television transmission. Television is a mass medium for advertising, entertainment, news, and sports.",
     "price": "$999",
-    "_id": 2
+    "_id": 2,
+    "category": "tv"
 },
 
 
@@ -22,7 +24,8 @@
     "image": "https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_960_720.jpg",
     "description": "A tablet computer, commonly shortened to tablet, is a mobile device, typically with a mobile operating system and touchscreen display processing circuitry, and a rechargeable battery in a single, thin and flat package.",
     "price": "$499",
-    "_id": 3
+    "_id": 3,
+    "category": "computers"
 },
 
 {
@@ -30,7 +33,8 @@
     "image": "https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg",
     "description": "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard.",
     "price": "$799",
-    "_id": 4
+    "_id": 4,
+    "category": "computers"
 },
 
 
@@ -39,7 +43,8 @@
     "image": "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=707&q=80",
     "description": "A video game console is an electronic device that outputs a video signal or image to display a video game that can be played with a game controller.",
     "price": "$499",
-    "_id": 5
+    "_id": 5,
+    "category": "entertainments"
 },
 
 
@@ -48,7 +53,8 @@
     "image": "https://images.unsplash.com/photo-1625315714730-d0830cd368bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
     "description": "A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program.",
     "price": "$249",
-    "_id": 6
+    "_id": 6,
+    "category": "computers"
 },
 
 {
@@ -56,7 +62,8 @@
     "image": "https://cdn.pixabay.com/photo/2019/08/20/09/03/computer-4418212_960_720.jpg",
     "description": "A motherboard (also called mainboard, main circuit board,[1] or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.",
     "price": "$199",
-    "_id": 7
+    "_id": 7,
+    "category": "computers"
 },
 
 {
@@ -64,7 +71,8 @@
     "image": "https://images.unsplash.com/photo-1632488507420-64f41ca8dd59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "description": "A memory card is an electronic data storage device used for storing digital information, typically using flash memory.",
     "price": "$99",
-    "_id": 8
+    "_id": 8,
+    "category": "computers"
 },
 
 {
@@ -72,7 +80,8 @@
     "image": "https://cdn.pixabay.com/photo/2020/10/10/22/05/hard-drive-inside-5644273_960_720.jpg",
     "description": "A hard disk drive (HDD), hard disk, hard drive, or fixed disk[b] is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material.",
     "price": "$129",
-    "_id": 9
+    "_id": 9,
+    "category": "computers"
 },
 
 {
@@ -80,8 +89,10 @@
     "image": "https://cdn.pixabay.com/photo/2020/06/06/01/21/nvidia-5264921_960_720.jpg",
     "description": "A graphics card (also called a video card, display card, graphics adapter,vga card/vga, video adapter, or display adapter) is an expansion card which generates a feed of output images to a display device (such as a computer monitor).",
     "price": "$699",
-    "_id": 10
+    "_id": 10,
+    "category": "computers"
 }
 
 
 ]
+
