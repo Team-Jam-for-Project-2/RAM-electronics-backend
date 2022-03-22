@@ -3,7 +3,7 @@ const seedData = require('./seeds.json');
 const Item = require('./models/items');
 
 
-Items.deleteMany({})
+Item.deleteMany({})
     .then(() => {
         Item.insertMany(seedData).then((item) => {
             console.log('the items to sell are seeded ✅✅✅')
