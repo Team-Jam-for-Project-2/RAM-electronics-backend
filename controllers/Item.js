@@ -1,6 +1,6 @@
 const express = require('express');
 const Item = require('../db/models/items');
-const router = express.Router;
+const router = express.Router();
 
 
 //Index: get all items
@@ -49,4 +49,4 @@ router.get('/:id', async (req, res) => {
 // })
 //
 
-module.exports= router;
+module.exports = router;
