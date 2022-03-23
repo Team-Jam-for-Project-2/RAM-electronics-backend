@@ -31,7 +31,7 @@ app.use('/api/carts', cartController);
 
 // User Controller
 const userController = require('./controllers/usersController');
-app.use('/api', userController);
+app.use('/api/user', userController);
 
 //Port connection ===================
 app.listen(app.get('port'), () => {
