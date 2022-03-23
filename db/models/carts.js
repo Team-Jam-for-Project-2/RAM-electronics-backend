@@ -1,4 +1,5 @@
 const mongoose = require('../connection');
+const path = require('path');
 
 const CartSchema = new mongoose.Schema({
   id: String,

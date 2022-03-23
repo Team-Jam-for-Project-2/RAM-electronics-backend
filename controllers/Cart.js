@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Cart = require('../db/models/carts');
+const path = require('path');
 
 // INDEX: GET all carts
 router.get('/', async (req, res) => {
