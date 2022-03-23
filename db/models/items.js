@@ -7,7 +7,7 @@ const ItemSchema = new Schema({
   image: String,
   description: String,
   price: String,
-  categories: String,
+  category: String,
   _id: Number,
 });
 
