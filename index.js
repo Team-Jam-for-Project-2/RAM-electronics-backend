@@ -19,13 +19,19 @@ app.get('/', (req, res) => {
   res.redirect('/api');
 });
 
-// Item Controller =====================
+
+//Controllers ===========================
+// Item Controller 
 const itemController = require('./controllers/Item');
 app.use('/api/items', itemController);
 
-// Cart Controller ===================
+// Cart Controller 
 const cartController = require('./controllers/Cart');
 app.use('/api/carts', cartController);
+
+// User Controller
+const userController = require('./controllers/usersController');
+app.use('/api', userController);
 
 //Port connection ===================
 app.listen(app.get('port'), () => {
