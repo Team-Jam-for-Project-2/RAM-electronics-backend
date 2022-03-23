@@ -1,4 +1,5 @@
-const mongoose = require('../db/connection');
+const mongoose = require('../connection');
+
 
 const userSchema = new mongoose.Schema(
   {
@@ -14,6 +15,14 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: {
+      virtuals: true,
+      // ret is the returned Mongoose document
+      transform: (_doc, ret) => {
+        delete ret.password;
+        return ret;
+      },
+    },
   }
 );
 

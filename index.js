@@ -30,7 +30,7 @@ const cartController = require('./controllers/Cart');
 app.use('/api/carts', cartController);
 
 // User Controller
-const userController = require('./controllers/usersController');
+const userController = require('./controllers/User');
 app.use('/api/user', userController);
 
 //Port connection ===================
