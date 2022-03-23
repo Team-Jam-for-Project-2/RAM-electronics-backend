@@ -1,69 +1,49 @@
-// const express = require('express');
-// const router = express.Router();
-// const Review = require('../db/models/reviews');
+const express = require('express');
+const router = express.Router();
+const Item = require('../db/models/items');
 
-// // INDEX: GET all reviews
-// router.get('/', async (req, res) => {
-//   try {
-//     await Review.find().then((reviews) => {
-//       res.json(reviews);
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+// CREATE: POST a new review
+router.post('/', (req, res, next) => {
+  const reviewData = req.body;
+  const itemId = reviewData.itemId;
+  //   const itemId = reviewData[_id];
 
-// // SHOW: GET one review
-// router.get('/:id', async (req, res) => {
-//   try {
-//     const review = await Review.findById(req.params.id);
-//     if (review) {
-//       res.json(review);
-//     } else {
-//       res.sendStatus(404);
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+  Item.findById(itemId)
+    .then((item) => {
+      item.reviews.push(reviewData);
+      return item.save();
+    })
+    .then((item) => res.status(201).json({ item: item }))
+    .catch(next);
+});
 
-// // CREATE: POST a new review
-// router.post('/', async (req, res) => {
-//   try {
-//     const newReview = await Review.create(req.body);
-//     res.status(201).json(newReview);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+// DELETE /reviews/:id
+router.delete('/:id', (req, res, next) => {
+  const id = req.params.id;
+  Item.findOne({ 'reviews._id': id })
+    .then((item) => {
+      item.reviews.id(id).remove();
+      return item.save();
+    })
+    .then(() => res.sendStatus(204))
+    .catch(next);
+});
 
-// // UPDATE: EDIT a review
-// router.put('/:id', async (req, res) => {
-//   try {
-//     const updatedReview = req.body;
-//     const updatedInfo = await Review.findByIdAndUpdate(
-//       req.params.id,
-//       updatedReview,
-//       { new: true }
-//     );
-//     res.json(updatedInfo);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+// PATCH /reviews/:id
+router.patch('/:id', (req, res, next) => {
+  const id = req.params.id;
+  const reviewData = req.body;
 
-// // DELETE: REMOVE a review
-// router.delete('/:id', async (req, res) => {
-//   try {
-//     const reviewToDelete = await Review.findByIdAndDelete(req.params.id);
-//     if (reviewToDelete) {
-//       res.sendStatus(204);
-//     } else {
-//       res.sendStatus(404);
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
+  Item.findOne({
+    'reviews._id': id,
+  })
+    .then((item) => {
+      const review = item.reviews.id(id);
+      review.set(reviewData);
+      return item.save();
+    })
+    .then(() => res.sendStatus(204))
+    .catch(next);
+});
 
-// module.exports = router;
+module.exports = router;

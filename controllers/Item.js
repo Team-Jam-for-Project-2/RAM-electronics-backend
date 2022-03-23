@@ -35,4 +35,32 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// CREATE
+// POST /item/
+router.post('/', (req, res, next) => {
+  const itemData = req.body;
+  Item.create(itemData)
+    .then((item) => res.status(201).json(item))
+    .catch(next);
+});
+
+// UPDATE
+// PATCH /item/:id
+router.patch('/:id', (req, res, next) => {
+  const id = req.params.id;
+  const itemData = req.body;
+  Item.findOneAndUpdate({ _id: id }, itemData, { new: true })
+    .then((item) => res.json(item))
+    .catch(next);
+});
+
+// DESTROY
+// DELETE /item/:id
+router.delete('/:id', (req, res, next) => {
+  const id = req.params.id;
+  Item.findOneAndDelete({ _id: id })
+    .then(() => res.sendStatus(204))
+    .catch(next);
+});
+
 module.exports = router;
