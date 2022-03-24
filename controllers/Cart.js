@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
 // SHOW: GET one cart
 router.get("/:id", async (req, res) => {
   try {
-    const cart = await Cart.findById(req.params.id);
+    const cart = await Cart.findById(req.params.id).populate("item");
     if (cart) {
       res.json(cart);
     } else {
