@@ -57,19 +57,31 @@ router.put("/:id", async (req, res) => {
 // UPDATE: add items to cart
 router.put("/:id/:itemId", async (req, res) => {
   try {
-    const item = await Item.findById(req.params.itemId);
-    Cart.findByIdAndUpdate(req.params.id).then((cart) => {
-      // add check to see if the item is already in the cart
-      const exists = cart.item.some((element) => {
-        return element._id === item._id;
-      });
-      if (!exists) {
-        cart.item.push(item);
-        cart.save();
-      }
+    const itemToAdd = await Item.findById(req.params.itemId);
+    const cart = await Cart.findByIdAndUpdate(
+      req.params.id,
+      {
+        $addToSet: { item: itemToAdd._id },
+      },
+      { new: true }
+    ).populate("item");
+    // .then((cart) => {
+    //   // add check to see if the item is already in the cart
+    //   // console.log(cart.item);
+    //   // const exists = cart.item.some((element) => {
+    //   //   return element._id === itemToAdd._id;
+    //   // });
+    //   // if (!exists) {
+    //   //   cart.item.push(itemToAdd);
+    //   //   return cart.save();
+    //   // }
 
-      return res.json(cart);
-    });
+    //   return res.json(cart);
+    // });
+    // .then((cart) => {
+    //   console.log(cart);
+    return res.json(cart);
+    // });
   } catch (error) {}
 });
 
