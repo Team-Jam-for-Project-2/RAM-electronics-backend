@@ -1,11 +1,11 @@
-const express = require('express');
-const Item = require('../db/models/items');
+const express = require("express");
+const Item = require("../db/models/items");
 const router = express.Router();
-const path = require('path');
+const path = require("path");
 
 //Index: get all items
 //http://localhost:4000/api/items/
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     await Item.find().then((data) => {
       if (data) {
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 //Show: Get one item by id
 //http://localhost:4000/api/items/id
 //below is await/async syntax
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const itemToShow = await Item.findById(req.params.id);
     if (itemToShow) {
@@ -37,7 +37,7 @@ router.get('/:id', async (req, res) => {
 
 // CREATE
 // POST /item/
-router.post('/', (req, res, next) => {
+router.post("/", (req, res, next) => {
   const itemData = req.body;
   Item.create(itemData)
     .then((item) => res.status(201).json(item))
@@ -45,8 +45,8 @@ router.post('/', (req, res, next) => {
 });
 
 // UPDATE
-// PATCH /item/:id
-router.patch('/:id', (req, res, next) => {
+// PUT /item/:id
+router.put("/:id", (req, res, next) => {
   const id = req.params.id;
   const itemData = req.body;
   Item.findOneAndUpdate({ _id: id }, itemData, { new: true })
@@ -56,7 +56,7 @@ router.patch('/:id', (req, res, next) => {
 
 // DESTROY
 // DELETE /item/:id
-router.delete('/:id', (req, res, next) => {
+router.delete("/:id", (req, res, next) => {
   const id = req.params.id;
   Item.findOneAndDelete({ _id: id })
     .then(() => res.sendStatus(204))
