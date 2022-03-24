@@ -1,7 +1,7 @@
-const ReviewSchema = require('./reviews');
-const mongoose = require('../connection');
+const ReviewSchema = require("./reviews");
+const mongoose = require("../connection");
 const Schema = mongoose.Schema;
-const path = require('path');
+const path = require("path");
 
 const ItemSchema = new Schema(
   {
@@ -11,6 +11,7 @@ const ItemSchema = new Schema(
     price: String,
     category: String,
     _id: Number,
+    quantity: Number,
     reviews: [ReviewSchema],
   },
   {
@@ -18,6 +19,6 @@ const ItemSchema = new Schema(
   }
 );
 
-const Item = mongoose.model('Item', ItemSchema);
+const Item = mongoose.model("Item", ItemSchema);
 
 module.exports = Item;
