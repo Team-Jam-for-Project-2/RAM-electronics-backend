@@ -1,10 +1,11 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const Cart = require('../db/models/carts');
-const path = require('path');
+const Cart = require("../db/models/carts");
+const Item = require("../db/models/items");
+const path = require("path");
 
 // INDEX: GET all carts
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     await Cart.find().then((carts) => {
       res.json(carts);
@@ -15,7 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 // SHOW: GET one cart
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const cart = await Cart.findById(req.params.id);
     if (cart) {
@@ -29,7 +30,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // CREATE: POST a new cart
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newCart = await Cart.create(req.body);
     res.status(201).json(newCart);
@@ -39,7 +40,7 @@ router.post('/', async (req, res) => {
 });
 
 // UPDATE: EDIT a cart
-router.put('/:id', async (req, res) => {
+router.put("/:id", async (req, res) => {
   try {
     const updatedCart = req.body;
     const updatedInfo = await Cart.findByIdAndUpdate(
@@ -53,8 +54,27 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// UPDATE: add items to cart
+router.put("/:id/:itemId", async (req, res) => {
+  try {
+    const item = await Item.findById(req.params.itemId);
+    Cart.findByIdAndUpdate(req.params.id).then((cart) => {
+      // add check to see if the item is already in the cart
+      const exists = cart.item.some((element) => {
+        return element._id === item._id;
+      });
+      if (!exists) {
+        cart.item.push(item);
+        cart.save();
+      }
+
+      return res.json(cart);
+    });
+  } catch (error) {}
+});
+
 // DELETE: REMOVE a cart
-router.delete('/:id', async (req, res) => {
+router.delete("/:id", async (req, res) => {
   try {
     const cartToDelete = await Cart.findByIdAndDelete(req.params.id);
     if (cartToDelete) {

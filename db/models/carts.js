@@ -2,7 +2,8 @@ const mongoose = require("../connection");
 const path = require("path");
 
 const CartSchema = new mongoose.Schema({
-  item: [],
+  id: 1,
+  item: [{ ref: "Item", type: mongoose.Schema.Types.ObjectId }],
   quantity: 0,
 });
 
