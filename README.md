@@ -26,12 +26,14 @@ jsonwebtoken
 express
 bcrypt
 axios
+heroku
 self made API
-CSS
 Visual Studio Code
 
 ## Link to API
 
+https://thawing-mountain-85716.herokuapp.com/api/carts/
+https://thawing-mountain-85716.herokuapp.com/api/items/
 
 
 ## Link to deployed app
@@ -48,7 +50,6 @@ https://github.com/Team-Jam-for-Project-2/ram-electronics-backend
 2. In terminal type: git clone [key]
 3. In terminal move into the file,: to do so type: cd ram-electronics-backend
 4. You will need to install several dependencies. Be sure to type in the following commands to terminal:
-
     npm i -y
     npm i axios
     npm i bcrypt
@@ -63,8 +64,11 @@ https://github.com/Team-Jam-for-Project-2/ram-electronics-backend
 5. Once everything is installed open in VS code by typing into terminal: 
     code .
 6. The "." on step 5 was important.
-7. To open the program on your browser locally type into the terminal: 
+7. To open the server locally type into the terminal: 
     nodemon
+8. Endpoints on routes can be tested via Postman or shown on the browser with a port of 4000:
+    http:localhost:4000/api/items
+    http:localhost:4000/api/carts
 
 ## Contribution Guidelines
 
@@ -82,9 +86,11 @@ Have items for sale.
 Be able to organize these items.
 Be able to put these items in a shopping cart.
 Have understandable, pleasing CSS design.
+Build an API from scratch and within the project achieve CRUD functionality.
 
 ## Stretch Goals
 
+Modify the way the API works with the item quantity.
 Have authenticated users.
 Be able to make reviews.
 
@@ -98,6 +104,7 @@ As a hesitant individual, I want the data of what is in my cart to be persisted 
 
 ## Future Goals
 
+Continue modifying API and routes.
 Fully Authenticate discreet users.
 Create a review system.
 
