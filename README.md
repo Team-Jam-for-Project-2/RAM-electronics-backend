@@ -31,9 +31,10 @@ heroku
 self made API
 Visual Studio Code
 
-## Link to API
+## Links to API
 
 https://thawing-mountain-85716.herokuapp.com/api/carts/
+
 https://thawing-mountain-85716.herokuapp.com/api/items/
 
 
