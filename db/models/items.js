@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const path = require("path");
 
 const ItemSchema = new Schema(
+
   {
     name: String,
     image: String,
@@ -18,6 +19,7 @@ const ItemSchema = new Schema(
     timestamps: true,
   }
 );
+
 
 const Item = mongoose.model("Item", ItemSchema);
 
