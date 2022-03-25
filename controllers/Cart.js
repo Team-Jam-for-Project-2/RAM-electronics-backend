@@ -1,9 +1,11 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const Cart = require('../db/models/carts');
+const Cart = require("../db/models/carts");
+const Item = require("../db/models/items");
+const path = require("path");
 
 // INDEX: GET all carts
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     await Cart.find().then((carts) => {
       res.json(carts);
@@ -14,9 +16,9 @@ router.get('/', async (req, res) => {
 });
 
 // SHOW: GET one cart
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
-    const cart = await Cart.findById(req.params.id);
+    const cart = await Cart.findById(req.params.id).populate("item");
     if (cart) {
       res.json(cart);
     } else {
@@ -28,7 +30,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // CREATE: POST a new cart
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newCart = await Cart.create(req.body);
     res.status(201).json(newCart);
@@ -38,7 +40,7 @@ router.post('/', async (req, res) => {
 });
 
 // UPDATE: EDIT a cart
-router.put('/:id', async (req, res) => {
+router.put("/:id", async (req, res) => {
   try {
     const updatedCart = req.body;
     const updatedInfo = await Cart.findByIdAndUpdate(
@@ -52,18 +54,58 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE: REMOVE a cart
-router.delete('/:id', async (req, res) => {
+// UPDATE: add items to cart
+router.put("/:id/:itemId", async (req, res) => {
   try {
-    const cartToDelete = await Cart.findByIdAndDelete(req.params.id);
-    if (cartToDelete) {
-      res.sendStatus(204);
-    } else {
-      res.sendStatus(404);
-    }
-  } catch (error) {
-    console.log(error);
-  }
+    const itemToAdd = await Item.findById(req.params.itemId);
+    const cart = await Cart.findByIdAndUpdate(
+      req.params.id,
+      {
+        $addToSet: { item: itemToAdd._id },
+      },
+      { new: true }
+    ).populate("item");
+    // .then((cart) => {
+    //   // add check to see if the item is already in the cart
+    //   // console.log(cart.item);
+    //   // const exists = cart.item.some((element) => {
+    //   //   return element._id === itemToAdd._id;
+    //   // });
+    //   // if (!exists) {
+    //   //   cart.item.push(itemToAdd);
+    //   //   return cart.save();
+    //   // }
+
+    //   return res.json(cart);
+    // });
+    // .then((cart) => {
+    //   console.log(cart);
+    return res.json(cart);
+    // });
+  } catch (error) {}
+});
+
+// DELETE: REMOVE an item from a cart
+router.delete("/:id/:itemId", async (req, res) => {
+  try {
+    const itemToDelete = await Item.findById(req.params.itemId);
+    const cart = await Cart.findByIdAndUpdate(req.params.id, {
+      $pull: { item: itemToDelete._id },
+    }).populate("item");
+
+    return res.json(cart);
+    // });
+  } catch (error) {}
+  // try {
+  //   const cartToDelete = await Cart.findByIdAndDelete(req.params.id);
+  //   if (cartToDelete) {
+  //     res.sendStatus(204);
+  //   } else {
+  //     res.sendStatus(404);
+  //   }
+  // } catch (error) {
+  //   console.log(error);
+  // }
 });
 
 module.exports = router;
