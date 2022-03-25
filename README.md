@@ -1,7 +1,3 @@
-# Things to finish in readme
-screenshots
-link to API
-
 # RAM Electronics EStore
 
 ## Project Description
@@ -10,9 +6,13 @@ In this project we challenged ourselves to create an online webstore. It sells e
 
 In this repository lies the backend: the data that seeds the API, the models that data is based off of, and the controllers to achieve complete CRUD functionality. There are currently features in the process of being built, namely a secure user authentication and a review system. 
 
-## Screenshots
+## Screenshots of deployed app
 
+Desktop view
+<img width="1307" alt="Screen Shot 2022-03-25 at 10 58 03 AM" src="https://user-images.githubusercontent.com/97859358/160176496-f97febf4-38f1-4388-9856-5e40c176f381.png">
 
+Mobile view
+![Screen Shot 2022-03-25 at 10 59 20 AM](https://user-images.githubusercontent.com/97859358/160176637-f5986f1c-1cce-42c1-9a53-54c3a5b3203e.png)
 
 ## Tech Used
 
