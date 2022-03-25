@@ -1,303 +1,623 @@
-
 [
     {
-        "name": "Refrigerator",
-        "image": "https://images.pexels.com/photos/2343467/pexels-photo-2343467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        "description": "A refrigerator is a commercial and home appliance consisting of a thermally insulated compartment and a heat pump (mechanical, electronic or chemical) that transfers heat from its inside to its external environment so that its inside is cooled to a temperature below the room temperature.",
-        "price": "$1999",
         "_id": 1,
         "category": "Appliance",
-        "quantity" : 0,
-        "reviews": []
-    }
-    ,
+        "description": "A refrigerator is a commercial and home appliance consisting of a thermally insulated compartment and a heat pump (mechanical, electronic or chemical) that transfers heat from its inside to its external environment so that its inside is cooled to a temperature below the room temperature.",
+        "image": "https://images.pexels.com/photos/2343467/pexels-photo-2343467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        "name": "Refrigerator",
+        "price": "$1999",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
+    },
     {
-        "name": "Oven",
-        "image": "https://cdn.pixabay.com/photo/2022/01/04/05/29/kitchen-6914223_960_720.jpg",
-        "description": "An oven is a tool which is used to expose materials to a hot environment.",
-        "price": "$499",
         "_id": 2,
         "category": "Appliance",
-        "quantity" : 0,
-        "reviews": []
+        "description": "An oven is a tool which is used to expose materials to a hot environment.",
+        "image": "https://cdn.pixabay.com/photo/2022/01/04/05/29/kitchen-6914223_960_720.jpg",
+        "name": "Oven",
+        "price": "$499",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-    
     {
-        "name": "Coffee Maker",
-        "image": "https://images.unsplash.com/photo-1608354580875-30bd4168b351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "description": "A coffeemaker, coffee maker or coffee machine is a cooking appliance used to brew coffee.",
-        "price": "$399",
         "_id": 3,
         "category": "Appliance",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A coffeemaker, coffee maker or coffee machine is a cooking appliance used to brew coffee.",
+        "image": "https://images.unsplash.com/photo-1608354580875-30bd4168b351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "name": "Coffee Maker",
+        "price": "$399",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-    
     {
-        "name": "Robotic Vacuum Cleaner",
-        "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "description": "A robotic vacuum cleaner, sometimes called a robovac or a Roomba as a generic trademark, is an autonomous robotic vacuum cleaner which has a limited vacuum floor cleaning system combined with sensors and robotic drives with programmable controllers and cleaning routines.",
-        "price": "$499",
         "_id": 4,
         "category": "Appliance",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A robotic vacuum cleaner, sometimes called a robovac or a Roomba as a generic trademark, is an autonomous robotic vacuum cleaner which has a limited vacuum floor cleaning system combined with sensors and robotic drives with programmable controllers and cleaning routines.",
+        "image": "https://images.unsplash.com/photo-1558317374-067fb5f30001?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Robotic Vacuum Cleaner",
+        "price": "$499",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-    
     {
-        "name": "Washing Machine",
-        "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-        "description": "A washing machine (laundry machine, clothes washer, washer, or simply wash) is a home appliance used to wash laundry. ",
-        "price": "$699",
         "_id": 5,
         "category": "Appliance",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A washing machine (laundry machine, clothes washer, washer, or simply wash) is a home appliance used to wash laundry. ",
+        "image": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "name": "Washing Machine",
+        "price": "$699",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
-
     {
-        "name": "TV",
-        "image": "https://cdn.pixabay.com/photo/2020/12/16/21/58/tv-5837826_960_720.jpg",
-        "description": "Television  is a telecommunication medium used for transmitting moving images in black-and-white or in color, and in two or three dimensions and sound. The term can refer to a television set, a television show, or the medium of television transmission. Television is a mass medium for advertising, entertainment, news, and sports.",
-        "price": "$999",
         "_id": 6,
         "category": "tv",
-        "quantity" : 0,
-        "reviews": []
+        "description": "Television  is a telecommunication medium used for transmitting moving images in black-and-white or in color, and in two or three dimensions and sound. The term can refer to a television set, a television show, or the medium of television transmission. Television is a mass medium for advertising, entertainment, news, and sports.",
+        "image": "https://cdn.pixabay.com/photo/2020/12/16/21/58/tv-5837826_960_720.jpg",
+        "name": "TV",
+        "price": "$999",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
     {
-        "name": "TV Speaker",
-        "image": "https://images.unsplash.com/photo-1539786774582-0707555f1f72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80",
-        "description": "Add more various sounds to your TV with new subwoofer for great audio quality in a minimalist design ",
-        "price": "$149",
         "_id": 7,
         "category": "tv",
-        "quantity" : 0,
-        "reviews": []
+        "description": "Add more various sounds to your TV with new subwoofer for great audio quality in a minimalist design ",
+        "image": "https://images.unsplash.com/photo-1539786774582-0707555f1f72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80",
+        "name": "TV Speaker",
+        "price": "$149",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "Projector",
-        "image": "https://cdn.pixabay.com/photo/2022/02/20/02/29/projector-7023604_960_720.jpg",
-        "description": "A projector or image projector is an optical device that projects an image (or moving images) onto a surface, commonly a projection screen. Most projectors create an image by shining a light through a small transparent lens, but some newer types of projectors can project the image directly, by using lasers.",
-        "price": "$1099",
         "_id": 8,
         "category": "tv",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A projector or image projector is an optical device that projects an image (or moving images) onto a surface, commonly a projection screen. Most projectors create an image by shining a light through a small transparent lens, but some newer types of projectors can project the image directly, by using lasers.",
+        "image": "https://cdn.pixabay.com/photo/2022/02/20/02/29/projector-7023604_960_720.jpg",
+        "name": "Projector",
+        "price": "$1099",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "HDMI Cable",
-        "image": "https://images.unsplash.com/photo-1636612240593-aa9122cc6a09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-        "description": "An HDMI cable is composed of four shielded twisted pairs, with impedance of the order of 100 (±15%), plus seven separate conductors.",
-        "price": "$19",
         "_id": 9,
         "category": "tv",
-        "quantity" : 0,
-        "reviews": []
+        "description": "An HDMI cable is composed of four shielded twisted pairs, with impedance of the order of 100 (±15%), plus seven separate conductors.",
+        "image": "https://images.unsplash.com/photo-1636612240593-aa9122cc6a09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+        "name": "HDMI Cable",
+        "price": "$19",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "TV Remote Control",
-        "image": "https://cdn.pixabay.com/photo/2019/08/27/10/48/remote-control-4433894_960_720.jpg",
-        "description": "A remote control (also known as a remote or clicker[1]) is an electronic device used to operate another device from a distance, usually wirelessly.",
-        "price": "29",
         "_id": 10,
         "category": "tv",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A remote control (also known as a remote or clicker[1]) is an electronic device used to operate another device from a distance, usually wirelessly.",
+        "image": "https://cdn.pixabay.com/photo/2019/08/27/10/48/remote-control-4433894_960_720.jpg",
+        "name": "TV Remote Control",
+        "price": "29",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
     {
-        "name": "Tablet",
-        "image": "https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_960_720.jpg",
-        "description": "A tablet computer, commonly shortened to tablet, is a mobile device, typically with a mobile operating system and touchscreen display processing circuitry, and a rechargeable battery in a single, thin and flat package.",
-        "price": "$499",
         "_id": 11,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A tablet computer, commonly shortened to tablet, is a mobile device, typically with a mobile operating system and touchscreen display processing circuitry, and a rechargeable battery in a single, thin and flat package.",
+        "image": "https://cdn.pixabay.com/photo/2015/01/20/12/51/ipad-605420_960_720.jpg",
+        "name": "Tablet",
+        "price": "$499",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Laptop",
-        "image": "https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg",
-        "description": "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard.",
-        "price": "$799",
         "_id": 12,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard.",
+        "image": "https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_960_720.jpg",
+        "name": "Laptop",
+        "price": "$799",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
-
     {
-        "name": "CPU",
-        "image": "https://images.unsplash.com/photo-1625315714730-d0830cd368bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
-        "description": "A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program.",
-        "price": "$249",
         "_id": 13,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program.",
+        "image": "https://images.unsplash.com/photo-1625315714730-d0830cd368bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+        "name": "CPU",
+        "price": "$249",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Mother board",
-        "image": "https://cdn.pixabay.com/photo/2019/08/20/09/03/computer-4418212_960_720.jpg",
-        "description": "A motherboard (also called mainboard, main circuit board,[1] or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.",
-        "price": "$199",
         "_id": 14,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A motherboard (also called mainboard, main circuit board,[1] or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.",
+        "image": "https://cdn.pixabay.com/photo/2019/08/20/09/03/computer-4418212_960_720.jpg",
+        "name": "Mother board",
+        "price": "$199",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "Memory Card",
-        "image": "https://images.unsplash.com/photo-1632488507420-64f41ca8dd59?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "description": "A memory card is an electronic data storage device used for storing digital information, typically using flash memory.",
-        "price": "$99",
         "_id": 15,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A memory card is an electronic data storage device used for storing digital information, typically using flash memory.",
+        "image": "https://images.unsplash.com/photo-1632488507420-64f41ca8dd59?ixlib=rb-1.2.1&  ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "name": "Memory Card",
+        "price": "$99",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
-    {   
-        "name": "Hard Drive",
-        "image": "https://cdn.pixabay.com/photo/2020/10/10/22/05/hard-drive-inside-5644273_960_720.jpg",
-        "description": "A hard disk drive (HDD), hard disk, hard drive, or fixed disk[b] is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material.",
-        "price": "$129",
+    {
         "_id": 16,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A hard disk drive (HDD), hard disk, hard drive, or fixed disk[b] is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material.",
+        "image": "https://cdn.pixabay.com/photo/2020/10/10/22/05/hard-drive-inside-5644273_960_720.jpg",
+        "name": "Hard Drive",
+        "price": "$129",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
     {
-        "name": "Graphic Card",
-        "image": "https://cdn.pixabay.com/photo/2020/06/06/01/21/nvidia-5264921_960_720.jpg",
-        "description": "A graphics card (also called a video card, display card, graphics adapter,vga card/vga, video adapter, or display adapter) is an expansion card which generates a feed of output images to a display device (such as a computer monitor).",
-        "price": "$699",
         "_id": 17,
         "category": "computers",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A graphics card (also called a video card, display card, graphics adapter,vga card/vga, video adapter, or display adapter) is an expansion card which generates a feed of output images to a display device (such as a computer monitor).",
+        "image": "https://cdn.pixabay.com/photo/2020/06/06/01/21/nvidia-5264921_960_720.jpg",
+        "name": "Graphic Card",
+        "price": "$699",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "Smart Watch",
-        "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
-        "description": "A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides for management and telemetry (such as long-term biomonitoring). While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, 2010s smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with FM radio and playback of digital audio and video files via a Bluetooth headset. Some models, called watch phones (or vice versa), have mobile cellular functionality like making calls.",
-        "price": "$299",
         "_id": 18,
         "category": "smart",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides for management and telemetry (such as long-term biomonitoring). While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, 2010s smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with FM radio and playback of digital audio and video files via a Bluetooth headset. Some models, called watch phones (or vice versa), have mobile cellular functionality like making calls.",
+        "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80",
+        "name": "Smart Watch",
+        "price": "$299",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Smart Phone",
-        "image": "https://cdn.pixabay.com/photo/2017/04/26/16/06/mobile-2262928_960_720.jpg",
-        "description": "A smartphone is a portable device that combines mobile telephone and computing functions into one unit.",
-        "price": "$799",
         "_id": 19,
         "category": "smart",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A smartphone is a portable device that combines mobile telephone and computing functions into one unit.",
+        "image": "https://cdn.pixabay.com/photo/2017/04/26/16/06/mobile-2262928_960_720.jpg",
+        "name": "Smart Phone",
+        "price": "$799",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
     {
-        "name": "Wireless Charger for phone",
-        "image": "https://images.unsplash.com/photo-1603674554159-b62f6febbce5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "description": "Wireless power transfer (WPT), wireless power transmission, wireless energy transmission (WET), or electromagnetic power transfer is the transmission of electrical energy without wires as a physical link.",
-        "price": "$39",
         "_id": 20,
         "category": "smart",
-        "quantity" : 0,
-        "reviews": []
+        "description": "Wireless power transfer (WPT), wireless power transmission, wireless energy transmission (WET), or electromagnetic power transfer is the transmission of electrical energy without wires as a physical link.",
+        "image": "https://images.unsplash.com/photo-1603674554159-b62f6febbce5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Wireless Charger for phone",
+        "price": "$39",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Wireless earbuds",
-        "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-        "description": "Wireless on-ear headphones.",
-        "price": "$99",
         "_id": 21,
         "category": "smart",
-        "quantity" : 0,
-        "reviews": []
+        "description": "Wireless on-ear headphones.",
+        "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "name": "Wireless earbuds",
+        "price": "$99",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "Portable Charger",
-        "image": "https://images.unsplash.com/photo-1525858907241-d230b66fb9fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1249&q=80",
-        "description": "Portable Charger with USB port",
-        "price": "$79",
         "_id": 22,
         "category": "smart",
-        "quantity" : 0,
-        "reviews": []
+        "description": "Portable Charger with USB port",
+        "image": "https://images.unsplash.com/photo-1525858907241-d230b66fb9fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1249&q=80",
+        "name": "Portable Charger",
+        "price": "$79",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Console",
-        "image": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
-        "description": "A video game console is an electronic device that outputs a video signal or image to display a video game that can be played with a game controller.",
-        "price": "$499",
         "_id": 23,
         "category": "game",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A video game console is an electronic device that outputs a video signal or image to display a video game that can be played with a game controller.",
+        "image": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+        "name": "Console",
+        "price": "$499",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-
     {
-        "name": "Virtual reality Headset",
-        "image": "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "description": "A virtual reality headset is a head-mounted device that provides virtual reality for the wearer.",
-        "price": "$349",
         "_id": 24,
         "category": "game",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A virtual reality headset is a head-mounted device that provides virtual reality for the wearer.",
+        "image": "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "name": "Virtual reality Headset",
+        "price": "$349",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     },
-
     {
-        "name": "Gaming Keyboard",
-        "image": "https://images.unsplash.com/photo-1626155399627-86488538895d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "description": "A keyboard for gaming",
-        "price": "$69",
         "_id": 25,
         "category": "game",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A keyboard for gaming",
+        "image": "https://images.unsplash.com/photo-1626155399627-86488538895d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "name": "Gaming Keyboard",
+        "price": "$69",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Works great!",
+                "rating": 5
+            },
+            {
+                "content": "This product is awesome!",
+                "rating": 5
+            },
+            {
+                "content": "Better than good!",
+                "rating": 5
+            }
+        ]
     },
-    
     {
-        "name": "Gaming Desktop",
-        "image": "https://images.unsplash.com/photo-1542729716-6d1890d980ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "description": "A desktop for gaming",
-        "price": "$1299",
         "_id": 26,
         "category": "game",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A desktop for gaming",
+        "image": "https://images.unsplash.com/photo-1542729716-6d1890d980ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "name": "Gaming Desktop",
+        "price": "$1299",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Awesome!",
+                "rating": 4.5
+            },
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            }
+        ]
     },
-
     {
-        "name": "Gaming Mouse",
-        "image": "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "description": "A mouse for gaming",
-        "price": "$59",
         "_id": 27,
         "category": "game",
-        "quantity" : 0,
-        "reviews": []
+        "description": "A mouse for gaming",
+        "image": "https://images.unsplash.com/photo-1629429408209-1f912961dbd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "name": "Gaming Mouse",
+        "price": "$59",
+        "quantity": 0,
+        "reviews": [
+            {
+                "content": "Perfect!",
+                "rating": 5
+            },
+            {
+                "content": "Great product!",
+                "rating": 4
+            },
+            {
+                "content": "Not bad!",
+                "rating": 3
+            }
+        ]
     }
-
 ]
-
