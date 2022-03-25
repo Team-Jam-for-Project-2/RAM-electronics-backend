@@ -85,18 +85,27 @@ router.put("/:id/:itemId", async (req, res) => {
   } catch (error) {}
 });
 
-// DELETE: REMOVE a cart
-router.delete("/:id", async (req, res) => {
+// DELETE: REMOVE an item from a cart
+router.delete("/:id/:itemId", async (req, res) => {
   try {
-    const cartToDelete = await Cart.findByIdAndDelete(req.params.id);
-    if (cartToDelete) {
-      res.sendStatus(204);
-    } else {
-      res.sendStatus(404);
-    }
-  } catch (error) {
-    console.log(error);
-  }
+    const itemToDelete = await Item.findById(req.params.itemId);
+    const cart = await Cart.findByIdAndUpdate(req.params.id, {
+      $pull: { item: itemToDelete._id },
+    }).populate("item");
+
+    return res.json(cart);
+    // });
+  } catch (error) {}
+  // try {
+  //   const cartToDelete = await Cart.findByIdAndDelete(req.params.id);
+  //   if (cartToDelete) {
+  //     res.sendStatus(204);
+  //   } else {
+  //     res.sendStatus(404);
+  //   }
+  // } catch (error) {
+  //   console.log(error);
+  // }
 });
 
 module.exports = router;
