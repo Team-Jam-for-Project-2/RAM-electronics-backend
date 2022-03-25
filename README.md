@@ -2,7 +2,7 @@
 
 ## Project Description
 
-In this project we challenged ourselves to create an online webstore. It sells electronic products and has various ways to organize the navigate through the products to put them into your cart.
+In this team project by Annie Courney, Mason Kang, and Jake Steele, we challenged ourselves to create an online webstore. It sells electronic products and has various ways to organize the navigate through the products to put them into your cart.
 
 In this repository lies the backend: the data that seeds the API, the models that data is based off of, and the controllers to achieve complete CRUD functionality. There are currently features in the process of being built, namely a secure user authentication and a review system. 
 
